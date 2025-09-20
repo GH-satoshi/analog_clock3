@@ -14,9 +14,19 @@
       height: 100vh;
       color: #00ff00;
       font-family: monospace;
+      /* 背景に縦線 */
+      background: 
+      repeating-linear-gradient(
+        to right,
+        #000 0px,
+        #000 19px,        /* 19pxぶん黒 */
+        #0f4d0f 19px,     /* 緑線スタート */
+        #0f4d0f 20px      /* 線の太さ1px */
+      );
     }
     .container {
       position: relative;
+      background: #000;
       width: min(110vw, 110vh);
       height: min(80vw, 80vh);
       border: 1px solid #00ff00;
